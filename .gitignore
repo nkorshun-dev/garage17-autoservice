@@ -1,0 +1,18 @@
+node_modules
+.env
+.env.*
+.netlify
+
+# Кэш дизайн-хука с локальными путями
+.impeccable/hook.cache.json
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+dist
+
+# Служебные файлы (только локально)
+.claude/
+.impeccable/
+PROJECT.md
+0[0-9]-*.md
