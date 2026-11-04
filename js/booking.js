@@ -2,7 +2,7 @@ import { DATA } from './data.js';
 import * as V from './validation.js';
 import { computeTotal, getCalcState, fmtNum, diagOnly } from './calculator.js';
 
-const DRAFT_KEY = 'garage17-booking-draft';
+const DRAFT_KEY = 'garage-17:booking-draft';
 const $ = (s, r = document) => r.querySelector(s);
 const pad = (n) => String(n).padStart(2, '0');
 const iso = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
