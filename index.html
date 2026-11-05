@@ -17,9 +17,9 @@
   <meta property="og:title" content="Гараж 17 — СТО в Шабанах с 2012 года">
   <meta property="og:description" content="6 постов, нормо-час 55 BYN, гарантия 12 мес или 20 000 км. г. Минск, ул. Селицкого, 21А. Пн–Пт 8:30–20:00, Сб 9:00–17:00.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f2328'/%3E%3Ctext x='16' y='23' font-size='17' font-weight='800' text-anchor='middle' fill='%23ff6b1a' font-family='Arial,sans-serif'%3E17%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/inter-cyrillic-1e8edb2f.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-cyrillic-d786a4e0.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"AutoRepair","name":"Гараж 17","telephone":"+375293614827","address":{"@type":"PostalAddress","streetAddress":"ул. Селицкого, 21А","addressLocality":"Минск","addressCountry":"BY"},"openingHours":["Mo-Fr 08:30-20:00","Sa 09:00-17:00"],"priceRange":"BYN"}
@@ -31,7 +31,7 @@
 <!-- 1. Шапка -->
 <header class="header" id="top">
   <div class="container header-in">
-    <a class="logo" href="#top" aria-label="Гараж 17 — на главную">
+    <a class="logo" href="#top" title="На главную">
       <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1f2328"/><text x="16" y="23" font-size="17" font-weight="800" text-anchor="middle" fill="#ff6b1a" font-family="Montserrat,Arial,sans-serif">17</text></svg>
       <span>ГАРАЖ <b>17</b></span>
     </a>
@@ -42,7 +42,7 @@
       <a href="#booking">Запись</a>
       <a href="#reviews">Отзывы</a>
       <a href="#contacts">Контакты</a>
-      <span class="nav-phone demo-link" title="Демо-проект: ссылка не активна" aria-label="Телефон +375 29 361-48-27 (в демо не активно)">+375 (29) 361-48-27</span>
+      <span role="img" class="nav-phone demo-link" title="Демо-проект: ссылка не активна" aria-label="Телефон +375 29 361-48-27 (в демо не активно)">+375 (29) 361-48-27</span>
       <a class="btn btn-sm nav-cta" href="#booking">Записаться</a>
     </nav>
     <a class="btn btn-sm header-cta" href="#booking">Записаться</a>
@@ -397,8 +397,8 @@
       <ul class="contact-list">
         <li><span>Адрес</span><b>г. Минск, ул. Селицкого, 21А</b><small class="muted">Промзона Шабаны. Въезд с Селицкого за АЗС, серые ворота с вывеской «Гараж 17».</small></li>
         <li><span>Часы работы</span><b>Пн–Пт 8:30–20:00, Сб 9:00–17:00, Вс — выходной</b></li>
-        <li><span>Телефон</span><span class="demo-link" title="Демо-проект: ссылка не активна" aria-label="Телефон +375 29 361-48-27 (в демо не активно)"><b>+375 (29) 361-48-27</b></span></li>
-        <li><span>Мессенджеры</span><span class="demo-link" title="Демо-проект: ссылка не активна" aria-label="Telegram (в демо не активно)">Telegram</span> · <span class="demo-link" title="Демо-проект: ссылка не активна" aria-label="Viber (в демо не активно)">Viber</span></li>
+        <li><span>Телефон</span><span role="img" class="demo-link" title="Демо-проект: ссылка не активна" aria-label="Телефон +375 29 361-48-27 (в демо не активно)"><b>+375 (29) 361-48-27</b></span></li>
+        <li><span>Мессенджеры</span><span role="img" class="demo-link" title="Демо-проект: ссылка не активна" aria-label="Telegram (в демо не активно)">Telegram</span> · <span role="img" class="demo-link" title="Демо-проект: ссылка не активна" aria-label="Viber (в демо не активно)">Viber</span></li>
       </ul>
       <iframe class="map" title="Карта: г. Минск, ул. Селицкого, 21А" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         src="https://www.openstreetmap.org/export/embed.html?bbox=27.6500%2C53.8530%2C27.6830%2C53.8680&amp;layer=mapnik&amp;marker=53.8605%2C27.6665"></iframe>
@@ -411,13 +411,13 @@
 <footer class="footer">
   <div class="container footer-in">
     <p><b>ГАРАЖ 17</b> — автосервис в Минске</p>
-    <p>г. Минск, ул. Селицкого, 21А · <span class="demo-link" title="Демо-проект: ссылка не активна" aria-label="Телефон +375 29 361-48-27 (в демо не активно)">+375 (29) 361-48-27</span></p>
+    <p>г. Минск, ул. Селицкого, 21А · <span role="img" class="demo-link" title="Демо-проект: ссылка не активна" aria-label="Телефон +375 29 361-48-27 (в демо не активно)">+375 (29) 361-48-27</span></p>
     <p class="muted-l">© 2012–2026 Гараж 17</p>
     <p class="muted-l">Демо-проект для портфолио. Бизнес вымышленный. Фото: <a href="https://unsplash.com/@xalo_mustafa" rel="noopener noreferrer" target="_blank">Mustafa Sheikhmouss</a> / Unsplash.</p>
   </div>
 </footer>
 
-<span class="fab demo-link" title="Демо-проект: ссылка не активна" aria-label="Телефон +375 29 361-48-27 (в демо не активно)">
+<span role="img" class="fab demo-link" title="Демо-проект: ссылка не активна" aria-label="Телефон +375 29 361-48-27 (в демо не активно)">
   <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
 </span>
 

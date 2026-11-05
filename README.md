@@ -51,3 +51,6 @@ netlify deploy --prod
 - Зачем валидация на каждом шаге формы? Пользователь сразу видит ошибку там, где её допустил, а не в конце длинной формы.
 - Что такое honeypot? Скрытое поле, которое человек не заполняет, а бот заполняет; такие заявки можно молча отбрасывать.
 - Почему localStorage в try/catch? В приватном режиме или при запрете хранилища доступ бросает исключение, а сайт должен работать и так.
+
+<!-- QA 2026-11-05 -->
+QA 05.11.2026: local Inter/Montserrat WOFF2 fonts, css/fonts.css, Cyrillic preload, OFL licenses. Logo accessible name starts with visible ГАРАЖ 17; inactive contact icons have role=img. Hero is text and facts, no photo is used.
