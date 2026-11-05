@@ -61,7 +61,7 @@ img, svg, iframe { max-width: 100%; }
 .badges { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .badges li { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 16px 20px; display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); align-items: center; gap: 16px; box-shadow: var(--shadow); }
 .badges b { font: 800 1.9rem var(--head); font-variant-numeric: tabular-nums; color: var(--accent-text); }
-.badges span { color: var(--muted); padding-inline-end: 4px; }
+.badges span { color: var(--muted); padding-inline-end: 4px; text-wrap: balance; }
 .demo-link { cursor: default; }
 
 /* Секции */
